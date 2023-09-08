@@ -100,7 +100,7 @@ jobs:
           # на сервере и в docker-compose.yml не указывать версию.
           tags: maksim68/taski_backend:latest
 
-   frontend_tests:
+  frontend_tests:
     runs-on: ubuntu-latest
 
     steps:
@@ -165,7 +165,7 @@ jobs:
           # Тут вместо username должен быть ваш логин на Docker Hub
           tags: maksim68/taski_gateway:latest 
 
-    deploy:
+  deploy:
     runs-on: ubuntu-latest
     needs: 
       # Дождёмся билда всех образов Taski
